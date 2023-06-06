@@ -214,7 +214,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255, 0.9);
+  background: linear-gradient(70deg, rgba(5,102,141,1) 40%, rgba(10,89,150,1) 60%);
   position: fixed;
   top: 0;
   right: -105%;
@@ -229,7 +229,7 @@ body {
 
 
 .login-form form {
-  background: #fff;
+  background: rgb(255, 255, 255, 0.7);
   border: var(--border);
   width: 40rem;
   padding: 2rem;
@@ -239,6 +239,7 @@ body {
 }
 
 .login-form form h3 {
+  padding-bottom: 2rem;
   font-size: 2.5rem;
   text-transform: uppercase;
   color: var(--black);
@@ -260,6 +261,34 @@ body {
   padding: 1rem 1.2rem;
   color: var(--black);
   text-transform: none;
+  background: rgb(255, 255, 255, 0.7);
+}
+
+.login-form form .inputSenha {
+  position: relative;
+}
+
+.login-form form .inputSenha #iconsenha {
+  position: absolute;
+  right: 5%;
+  padding-top: 20px;
+  cursor: pointer;
+  color: var(--light-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.login-form2 form .inputSenha2 {
+  position: relative;
+}
+
+.login-form2 form .inputSenha2 #iconsenha2 {
+  position: absolute;
+  right: 5%;
+  padding-top: 20px;
+  color: var(--light-color);
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .login-form form .checkbox {
@@ -305,7 +334,7 @@ body {
   background: url(../img/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 480px;
+  height: 520px;
 }
 
 .home .row {
@@ -322,7 +351,7 @@ body {
 .home .row .img-slider {
   flex: 1 1 42rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 .home .row .img-slider a img {
@@ -657,6 +686,108 @@ body {
   line-height: 2;
 }
 
+.login-form2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(70deg, rgba(5,102,141,1) 40%, rgba(10,89,150,1) 60%);
+  position: fixed;
+  top: 0;
+  right: -105%;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+}
+
+.login-form2.active {
+  right: 0;
+}
+
+.login-form2 form {
+  background: rgb(255, 255, 255, 0.8);
+  border: var(--border);
+  width: 40rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+.login-form2 form h3 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+}
+
+.login-form2 form span {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.login-form2 form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  font-size: 1.6rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  color: var(--black);
+  text-transform: none;
+  background: rgb(255, 255, 255, 0.8);
+}
+
+.login-form2 form .cpf {
+  width: 100%;
+  margin: 0.7rem 0;
+  font-size: 1.6rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.login-form2 form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.login-form2 form .checkbox label {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.login-form2 form .btn {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.login-form2 form p {
+  padding-top: 0.8rem;
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.login-form2 form p a {
+  color: #05668D;
+  text-decoration: underline;
+}
+
+.login-form2 #close-login-btn2 {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 5rem;
+  color: var(--black);
+  cursor: pointer;
+}
 
 
 
@@ -673,6 +804,12 @@ body {
 
 
 /* responsividade */
+/* @media (max-width: 1120px) {
+  .login-form form #iconsenha {
+    right: 34.8%;
+    top: 49.3%;
+  }
+} */
 
 @media (max-width: 991px) {
     html {

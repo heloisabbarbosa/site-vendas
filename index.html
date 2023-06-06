@@ -35,7 +35,7 @@
           <a href="#featured">Produtos</a>
           <a href="#arrivals">Lançamentos</a>
           <a href="#reviews">Avaliações</a>
-          <a href="#contact">Motivações</a>
+          <a href="#contact">Descubra</a>
         </nav>
       </div>
     </header>
@@ -54,7 +54,10 @@
         <span>E-mail</span>
         <input type="email" class="box" name="" placeholder="insira seu e-mail" id="">
         <span>Senha</span>
-        <input type="password" class="box" name="" placeholder="insira sua senha" id="">
+        <div class="inputSenha">
+        <input type="password" class="box" name="" placeholder="insira sua senha" id="senha">
+        <div id="iconsenha" class="fas fa-eye" onclick="showHide()"></div>
+        </div>
         <div class="checkbox">
           <input type="checkbox" name="" id="remember-me">
           <label for="remember-me">Relembrar</label>
@@ -64,6 +67,7 @@
         <p>Não tem uma conta? <a href="#">Crie uma</a></p>
       </form>
     </div>
+
     <section class="home" id="home">
       <div class="row">
         <div class="content">
@@ -449,12 +453,37 @@
         <h3>Venda conosco também!</h3>
         <h1>A melhor plataforma para seus negócios</h1>
         <p>Aqui, você tem a oportunidade de transformar sua paixão em um negócio lucrativo. Seja você um empreendedor, o nosso site é o lugar ideal para dar vida aos seus produtos e alcançar um público amplo.</p>
-        <a href="#" class="btn">Cadastra-se</a>
+        <a href="#" id="register-btn" class="btn">Cadastra-se</a>
       </div>
       <div class="image">
         <img src="img/divulgacao.png" alt="">
       </div>
+
+      <div class="login-form2">
+        <div id="close-login-btn2" class="fas fa-times"></div>
+        <form action="">
+          <h3>register</h3>
+          <span>Apelido</span>
+          <input type="email" class="box" name="" placeholder="ex: Heloisa B" id="">
+          <span>Insira seu CPF</span>
+          <input type="text" class="cpf" name="" placeholder="somente números, ex: 12345678985" id="">
+          <span>E-mail</span>
+          <input type="email" class="box" name=""  id="">
+          <span>Senha</span>
+          <div class="inputSenha2">
+          <input type="password" class="box" name="" id="password2">
+          <div id="iconsenha2" class="fas fa-eye" onclick="show()"></div>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me2">
+            <label for="remember-me">Relembrar</label>
+          </div>
+          <input type="submit" value="Cadastra-se" class="btn">
+          <p>Já tem uma conta? <a href="#">Entrar</a></p>
+        </form>
+    </div>
     </section>
+
     <section class="reviews" id="reviews">
       <h1 class="heading"> <span>Avaliações</span> </h1>
       <div class="swiper reviews-slider">
@@ -541,7 +570,7 @@
     </section>
 
     <section class="contato" id="contact">
-      <h1 class="heading"> <span>Motivações</span> </h1>
+      <h1 class="heading"> <span>Descubra</span> </h1>
       <div class="swiper contact-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide box">
@@ -593,7 +622,7 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>

@@ -12,6 +12,48 @@ document.querySelector('#close-login-btn').onclick = () => {
     loginForm.classList.remove('active');
 }
 
+let loginForm2 = document.querySelector('.login-form2');
+document.querySelector('#register-btn').onclick = () => {
+    loginForm2.classList.toggle('active');
+}
+document.querySelector('#close-login-btn2').onclick = () => {
+  loginForm2.classList.remove('active');
+}
+
+new Cleave('.cpf', {
+  delimiters: ['.','.','-'],
+  blocks: [3,3,3,2],
+  numericOnly: true
+});
+
+function showHide() {
+  var input = document.getElementById('senha')
+  var btnShow = document.getElementById('iconsenha')
+
+  if (input.type === 'password') {
+    input.setAttribute('type','text')
+    btnShow.classList.replace('fa-eye','fa-eye-slash')
+  }
+  else {
+    input.setAttribute('type','password')
+    btnShow.classList.replace('fa-eye-slash','fa-eye')
+  }
+}
+
+function show() {
+  var inputPass = document.getElementById('password2')
+  var btnShowPass = document.getElementById('iconsenha2')
+
+  if (inputPass.type === 'password') {
+    inputPass.setAttribute('type','text')
+    btnShowPass.classList.replace('fa-eye','fa-eye-slash')
+  }
+  else {
+    inputPass.setAttribute('type','password')
+    btnShowPass.classList.replace('fa-eye-slash','fa-eye')
+  }
+}
+
 window.onscroll = () => {
 
     searchForm.classList.remove('active');
