@@ -362,10 +362,10 @@ body {
   transform: scale(0.9);
 }
 
-.home .row .img-slider .stand {
+/* .home .row .img-slider .stand {
   width: 100%;
   margin-top: -0.8rem;
-}
+} deu tudo errado*/
 
 .home .row .content h3 {
   color: #05668D;
@@ -788,6 +788,56 @@ body {
   color: var(--black);
   cursor: pointer;
 }
+
+/* .shopping-cart {
+  position: absolute;
+  
+  right: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  width: 30rem;
+  background: #fff;
+}
+
+.shopping-cart .box{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.shopping-cart .box img {
+  height: 10rem;
+}
+
+.shopping-cart .box .fa-trash {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  color: var(--light-color);
+  transform: translateY(-50%);
+}
+
+.shopping-cart .box .fa-trash:hover {
+  color: #05668D;
+}
+
+.shopping-cart .box .content h3 {
+  color: var(--black);
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.shopping-cart .box .content span {
+  color: var(--light-color);
+  font-size: 1.6rem;
+} */
+
+
+
 
 
 

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site de Vendas</title>
+  <title>JAHV-G</title>
+  <link rel="shortcut icon" href="img/icon-pag.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -38,7 +39,42 @@
           <a href="#contact">Descubra</a>
         </nav>
       </div>
+
+      <div class="shopping-cart">
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="img/produto-8.png" alt="">
+        <div class="content">
+          <h3>Produto</h3>
+          <span class="preco">R$59.99/-</span>
+          <span class="quant">Qtd: 1</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="img/produto-11.png" alt="">
+        <div class="content">
+          <h3>Produto</h3>
+          <span class="preco">R$89.99/-</span>
+          <span class="quant">Qtd: 2</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="img/produto-9.png" alt="">
+        <div class="content">
+          <h3>Produto</h3>
+          <span class="preco">R$19.99/-</span>
+          <span class="quant">Qtd: 6</span>
+        </div>
+      </div>
+      <div class="total"> Total: 357,93/- </div>
+      <a href="" class="btn">checkout</a>
+    </div>
     </header>
+    
     <nav class="navbar2">
         <a href="#home" class="fas fa-home"></a>
         <a href="#featured"class="fas fa-list"></a>
@@ -52,10 +88,10 @@
       <form action="">
         <h3>sign in</h3>
         <span>E-mail</span>
-        <input type="email" class="box" name="" placeholder="insira seu e-mail" id="">
+        <input type="email" class="box" name="" placeholder="insira seu e-mail" id="" required>
         <span>Senha</span>
         <div class="inputSenha">
-        <input type="password" class="box" name="" placeholder="insira sua senha" id="senha">
+        <input type="password" class="box" name="" placeholder="insira sua senha" id="senha" required>
         <div id="iconsenha" class="fas fa-eye" onclick="showHide()"></div>
         </div>
         <div class="checkbox">
@@ -464,21 +500,21 @@
         <form action="">
           <h3>register</h3>
           <span>Apelido</span>
-          <input type="email" class="box" name="" placeholder="ex: Heloisa B" id="">
+          <input type="email" class="box" name="" placeholder="ex: Heloisa B" id="" required>
           <span>Insira seu CPF</span>
-          <input type="text" class="cpf" name="" placeholder="somente números, ex: 12345678985" id="">
+          <input type="text" class="cpf" name="" placeholder="somente números, ex: 12345678985" id="" required>
           <span>E-mail</span>
-          <input type="email" class="box" name=""  id="">
+          <input type="email" class="box" name=""  id="" required>
           <span>Senha</span>
           <div class="inputSenha2">
-          <input type="password" class="box" name="" id="password2">
+          <input type="password" class="box" name="" id="password2" required>
           <div id="iconsenha2" class="fas fa-eye" onclick="show()"></div>
           </div>
           <div class="checkbox">
             <input type="checkbox" name="" id="remember-me2">
             <label for="remember-me">Relembrar</label>
           </div>
-          <input type="submit" value="Cadastra-se" class="btn">
+          <input type="submit" value="Cadastra-se" class="btn" onclick="anuncios()">
           <p>Já tem uma conta? <a href="#">Entrar</a></p>
         </form>
     </div>

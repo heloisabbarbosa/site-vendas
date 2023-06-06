@@ -20,6 +20,10 @@ document.querySelector('#close-login-btn2').onclick = () => {
   loginForm2.classList.remove('active');
 }
 
+function anuncios() {
+  window.location.href = "anuncios.html";
+}
+
 new Cleave('.cpf', {
   delimiters: ['.','.','-'],
   blocks: [3,3,3,2],
