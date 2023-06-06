@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
   --yellow: #cc902a;
@@ -6,12 +7,12 @@
   --black: #444;
   --light-color: #666;
   --border: .1rem solid rgba(0,0,0, 0.1);
-  --border-hover: .1rem solid var(--black);
+  --border-hover: .1rem solid #05668D;
   --box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -66,7 +67,7 @@ section {
 .heading span {
   font-size: 3rem;
   padding: 0.5rem 2rem;
-  color: var(--black);
+  color: #05668D;
   background: #fff;
   border: var(--border);
 }
@@ -88,7 +89,7 @@ section {
 }
 
 .header .header1 {
-  background-color: #fff;
+  background-color: #05668D;
   padding: 1.5rem 9%;
   display: flex;
   align-items: center;
@@ -96,9 +97,15 @@ section {
 }
 
 .header .header1 .logo {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
   font-size: 2.5rem;
   font-weight: bolder;
-  color: var(--black);
+  color: #fff;
+}
+
+.header .header1 .logo:hover {
+  color: var(--yellow);
 }
 
 .header .header1 .logo i {
@@ -139,7 +146,7 @@ section {
 .header .header1 .icons div, .header .header1 .icons a {
   font-size: 2.5rem;
   margin-left: 1.5rem;
-  color: var(--black);
+  color: #fff;
   cursor: pointer;
 }
 
@@ -184,12 +191,13 @@ body {
 
 .navbar2 {
   text-align: center;
-  background-color: var(--yellow);
+  background-color: #05668D;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  display: none;
 }
 
 .navbar2 a {
@@ -297,6 +305,7 @@ body {
   background: url(../img/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  height: 480px;
 }
 
 .home .row {
@@ -326,11 +335,11 @@ body {
 
 .home .row .img-slider .stand {
   width: 100%;
-  margin-top: -2rem;
+  margin-top: -0.8rem;
 }
 
 .home .row .content h3 {
-  color: var(--black);
+  color: #05668D;
   font-size: 4rem;
 }
 
@@ -357,7 +366,7 @@ body {
 
 .iconscc .icons i {
   font-size: 3.5rem;
-  color: var(--yellow);
+  color: #05668D;
 }
 
 .iconscc .icons h3 {
@@ -373,7 +382,6 @@ body {
 }
 
 .featured .produtos-slider .box {
-  width: 25rem;
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
@@ -406,7 +414,7 @@ body {
   right: 0;
   background-color: #fff;
   z-index: 1;
-  transform: translateY(-100%);
+  transform: translateY(-105%);
 }
 
 .featured .produtos-slider .box:hover .icons {
@@ -420,7 +428,7 @@ body {
 }
 
 .featured .produtos-slider .box .icons a:hover {
-  background: var(--yellow);
+  background: #05668D;
   color: #fff;
 }
 
@@ -430,16 +438,224 @@ body {
 }
 
 .featured .produtos-slider .box .content h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--black);
 }
 
 .featured .produtos-slider .box .content .preco {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: var(--black);
   padding-top: 1rem;
 }
 
+.featured .produtos-slider .box .content .preco  span{
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-decoration: line-through;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  border: var(--border-hover);
+  height: 4rem;
+  width: 4rem;
+  color: var(--black);
+  background: #fff;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 2rem;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: #05668D;
+  color: #fff;
+}
+
+.newsletter {
+  background: linear-gradient(rgba(0,0,0,0.66), rgba(0,0,0,0.66)), url(../img/banner2-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.newsletter form {
+  max-width: 45rem;
+  margin-left: auto;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.newsletter form h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding-bottom: 0.7rem;
+  font-weight: normal;
+}
+
+.newsletter form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  text-transform: none;
+}
+
+.arrivals .arrivals-slider .box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  border: var(--border);
+  margin: 1rem 0;
+}
+
+.arrivals .arrivals-slider .box:hover {
+  border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img {
+  height: 15rem;
+}
+
+.arrivals .arrivals-slider .box .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.arrivals .arrivals-slider .box .preco {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.arrivals .arrivals-slider .box .preco span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .content .stars i {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.cadastros {
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cadastros .content {
+  flex: 1 1 42rem;
+}
+
+.cadastros .image {
+  flex: 1 1 42rem;
+}
+
+.cadastros .image img {
+  width: 600px;
+}
+
+.cadastros .content h3 {
+  font-size: 3.5rem;
+  color: #05668D;
+  padding-bottom: 4rem;
+  font-weight: bold;
+}
+
+.cadastros .content h1 {
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.cadastros .content p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.reviews .reviews-slider .box {
+  border: var(--border);
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.reviews .reviews-slider .box:hover {
+  border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img {
+  height: 9rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3 {
+  color: var(--black);
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+}
+
+.reviews .reviews-slider .box p {
+  color: var(--light-color);
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i {
+  font-size: 1.7rem;
+  color: var(--yellow);
+}
+
+.contato .contact-slider .box {
+  margin:  2rem 0;
+  border: var(--border);
+}
+
+.contato .contact-slider .box:hover {
+  border: #05668D;
+}
+
+.contato .contact-slider .box .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contato .contact-slider .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contato .contact-slider .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.contato .contact-slider .box .content {
+  padding: 1.5rem;
+}
+
+.contato .contact-slider .box .content h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+}
+
+.contato .contact-slider .box .content p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  line-height: 2;
+}
 
 
 
@@ -518,6 +734,19 @@ body {
 
   .home .row .content h3 {
     font-size: 3.5rem;
+  }
+
+  .newsletter {
+    background-position: right;
+  }
+
+  .newsletter form {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .cadastros .image img {
+    width: 300px;
   }
 
 }
