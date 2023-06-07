@@ -936,7 +936,71 @@ body {
   height: 4rem;
 }
 
+/* .headerprofile .account .box img {
+  height: 3.8rem;
+  width: 3.8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
+.headerprofile .account .box p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.headerprofile .account .box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  margin: 0.7rem 0;
+}
+
+.headerprofile .account {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  right: -100%;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  width: 20rem;
+  background: #fff;
+}
+
+.headerprofile .account.active {
+  right: 3.8rem;
+  transition: 0.3s linear;
+}
+
+.headerprofile .account ul li {
+  display: flex;
+  padding: 10px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.headerprofile .account ul li:hover {
+  background-color: #c7dcff;
+  border-radius: 0.5rem;
+}
+
+
+.headerprofile .account ul {
+  margin-top: 15px;
+}
+
+.headerprofile .account ul li i {
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
+
+
+.headerprofile .account ul li p {
+  margin-left: 10px;
+  font-size: 1.4rem;
+} */
 
 
 

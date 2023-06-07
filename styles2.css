@@ -113,8 +113,226 @@ section {
 
 body {
     height: 300rem;
-    background: url(../img/banner-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 520px;
+}
+
+.headerprofile .account .box img {
+  height: 3.8rem;
+  width: 3.8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.headerprofile .account .box p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.headerprofile .account .box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  margin: 0.7rem 0;
+}
+
+.headerprofile .account {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  right: -100%;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  width: 20rem;
+  background: #fff;
+}
+
+.headerprofile .account.active {
+  right: 3.8rem;
+  transition: 0.3s linear;
+}
+
+.headerprofile .account ul li {
+  display: flex;
+  padding: 10px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.headerprofile .account ul li:hover {
+  background-color: #c7dcff;
+  border-radius: 0.5rem;
+}
+
+
+.headerprofile .account ul {
+  margin-top: 15px;
+}
+
+.headerprofile .account ul li i {
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
+
+
+.headerprofile .account ul li p {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+.cadastro {
+  background: url(../img/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+
+.cadastro .form-cadastro {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 45rem;
+  height: 100%;
+  width: 100%;
+}
+
+.form-cadastro form {
+  background: rgb(255, 255, 255, 0.7);
+  border: var(--border);
+  width: 60rem;
+  padding: 5rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.7rem;
+  margin: 2rem;
+}
+
+.form-cadastro form h1 {
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  color: #05668D;
+  text-align: left;
+}
+
+.form-cadastro form h3 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-align: left;
+}
+
+.form-cadastro form span {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+  color: var(--light-color);
+}
+
+.form-cadastro form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  font-size: 1.6rem;
+  border: var(--border);
+  border-radius: 0.7rem;
+  padding: 1rem 1.2rem;
+  color: var(--black);
+  text-transform: none;
+  background: rgb(255, 255, 255);
+}
+
+.form-cadastro form .btn {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.cadastro .row {
+  left: 15rem;
+  margin-top: 1rem;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cadastro .row .content {
+  flex: 1 1 42rem;
+}
+
+.cadastro .row .form-cadastro {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.cadastro .row .content ul li {
+  display: flex;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.cadastro .row .content ul li:hover {
+  background-color: #c7dcff;
+  border-radius: 0.5rem;
+}
+
+.cadastro .row ul li i {
+  color: var(--yellow);
+  font-size: 2.2rem;
+}
+
+.cadastro .row ul li p {
+  font-size: 1.7rem;
+  margin-left: 15px;
+}
+
+#meucad {
+  background-color: #c7dcff;
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsividade */
+
+@media (max-width: 991px) {
+  .headerprofile .account.active {
+    top: 11%;
+    right: 4rem;
+    transition: 0.2s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerprofile .account {
+    top: -100%;
+    right: 0;
+  }
+
+  .headerprofile .account.active {
+    top: 11%;
+    right: 3.8rem;
+    transition: 0.2s linear;
+  }
 }
