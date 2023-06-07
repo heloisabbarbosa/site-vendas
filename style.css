@@ -428,7 +428,7 @@ body {
 }
 
 .featured .produtos-slider .box:hover .image {
-  transform: translateY(6rem);
+  transform: translateY(6.4rem);
 }
 
 .featured .produtos-slider .box .image img {
@@ -501,7 +501,7 @@ body {
 }
 
 .newsletter {
-  background: linear-gradient(rgba(0,0,0,0.66), rgba(0,0,0,0.66)), url(../img/banner2-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.66), rgba(0,0,0,0.66)), url(img/banner2-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -793,12 +793,17 @@ body {
   position: absolute;
   z-index: 3;
   top: 10%;
-  right: 2rem;
+  right: -100%;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
-  width: 30rem;
+  width: 35rem;
   background: #fff;
+}
+
+.header .shopping-cart.active {
+  right: 2rem;
+  transition: 0.3s linear;
 }
 
 .header .shopping-cart .box {
@@ -823,7 +828,113 @@ body {
   transform: translateY(-50%);
 }
 
+.header .shopping-cart .box .fa-trash:hover {
+  color: red;
+}
 
+.header .shopping-cart .box .content h3 {
+  color: var(--black);
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span {
+  color: var(--light-color);
+  font-size: 1.6rem;
+}
+
+.header .shopping-cart .box .content .quant {
+  padding-left: 1rem;
+}
+
+.header .shopping-cart .total {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--black);
+}
+
+.header .shopping-cart .btn {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+}
+
+.footer {
+  background: #f3f3f3;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: var(--yellow);
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+  color: #05668D;
+  padding: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  background: #eee;
+  margin-left: 0.2rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background-color: #05668D;
+  color: #fff;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.footer .box-container .box .payment-img {
+  margin-top: 2rem;
+  height: 4rem;
+}
 
 
 
@@ -922,6 +1033,17 @@ body {
 
   .cadastros .image img {
     width: 300px;
+  }
+
+  .header .shopping-cart {
+    top: -100%;
+    right: 0;
+  }
+
+  .header .shopping-cart.active {
+    top: 10%;
+    right: 2rem;
+    transition: 0.3s linear;
   }
 
 }

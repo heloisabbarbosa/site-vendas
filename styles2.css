@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --yellow: #cc902a;
+  --darkcolor: #815406;
+  --black: #444;
+  --light-color: #666;
+  --border: .1rem solid rgba(0,0,0, 0.1);
+  --border-hover: .1rem solid #05668D;
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: var(--yellow);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+.btn:hover {
+    background: var(--darkcolor);
+}
+
+.headerprofile .headerprofile1 {
+    background-color: #05668D;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerprofile .headerprofile1 .logo {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.headerprofile .headerprofile1 .logo:hover {
+    color: var(--yellow);
+}
+
+.headerprofile .headerprofile1 .logo i {
+    color: var(--yellow);
+}
+
+.headerprofile .headerprofile1 .icons div {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+} 
+
+.headerprofile .headerprofile1 .icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerprofile .headerprofile1 .icons .user img {
+    height: 3.8rem;
+    width: 3.8rem;
+    margin-top: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.headerprofile .headerprofile1 .icons div:hover {
+    color: var(--yellow);
+}
+
+body {
+    height: 300rem;
+    background: url(../img/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+}

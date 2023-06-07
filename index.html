@@ -25,7 +25,7 @@
         <div class="icons">
           <div id="search-btn" class="fas fa-search"></div>
           <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="cart-btn" class="fas fa-shopping-cart"></div>
           <div id="login-btn" class="fas fa-user"></div>
         </div>
       </div>
@@ -71,10 +71,10 @@
         </div>
       </div>
       <div class="total"> Total: 357,93/- </div>
-      <a href="" class="btn">checkout</a>
+      <a href="" class="btn">Comprar itens</a>
     </div>
     </header>
-    
+
     <nav class="navbar2">
         <a href="#home" class="fas fa-home"></a>
         <a href="#featured"class="fas fa-list"></a>
@@ -86,12 +86,12 @@
     <div class="login-form">
       <div id="close-login-btn" class="fas fa-times"></div>
       <form action="">
-        <h3>sign in</h3>
+        <h3>Faça Login</h3>
         <span>E-mail</span>
         <input type="email" class="box" name="" placeholder="insira seu e-mail" id="" required>
         <span>Senha</span>
         <div class="inputSenha">
-        <input type="password" class="box" name="" placeholder="insira sua senha" id="senha" required>
+        <input type="password" maxlength="20" class="box" name="" placeholder="insira sua senha" id="senha" required>
         <div id="iconsenha" class="fas fa-eye" onclick="showHide()"></div>
         </div>
         <div class="checkbox">
@@ -489,7 +489,7 @@
         <h3>Venda conosco também!</h3>
         <h1>A melhor plataforma para seus negócios</h1>
         <p>Aqui, você tem a oportunidade de transformar sua paixão em um negócio lucrativo. Seja você um empreendedor, o nosso site é o lugar ideal para dar vida aos seus produtos e alcançar um público amplo.</p>
-        <a href="#" id="register-btn" class="btn">Cadastra-se</a>
+        <a href="#" id="register-btn" class="btn">Cadastre-se</a>
       </div>
       <div class="image">
         <img src="img/divulgacao.png" alt="">
@@ -498,16 +498,16 @@
       <div class="login-form2">
         <div id="close-login-btn2" class="fas fa-times"></div>
         <form action="">
-          <h3>register</h3>
+          <h3>Registre-se</h3>
           <span>Apelido</span>
-          <input type="email" class="box" name="" placeholder="ex: Heloisa B" id="" required>
+          <input type="text" maxlength="20" class="box" name="" placeholder="ex: Heloisa B" id="" required>
           <span>Insira seu CPF</span>
           <input type="text" class="cpf" name="" placeholder="somente números, ex: 12345678985" id="" required>
           <span>E-mail</span>
           <input type="email" class="box" name=""  id="" required>
           <span>Senha</span>
           <div class="inputSenha2">
-          <input type="password" class="box" name="" id="password2" required>
+          <input type="password" maxlength="20" class="box" name="" id="password2" required>
           <div id="iconsenha2" class="fas fa-eye" onclick="show()"></div>
           </div>
           <div class="checkbox">
@@ -654,6 +654,46 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3> JAHV-G <i class="fas fa-dollar"></i></h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, quae?</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Para informações</h3>
+          <a href="#" class="links"> <i class="fas fa-phone"></i> +55 4002-8922 </a>
+          <a href="#" class="links"> <i class="fas fa-phone"></i> +55 4002-8922 </a>
+          <a href="#" class="links"> <i class="fas fa-envelope"></i> empresa@gmail.com </a>
+          <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Timbaúba/Recife-PE </a>
+        </div>
+
+      <div class="box">
+        <h3>Por várias Regiões</h3>
+        <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Pernambuco </a>
+        <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Rio de Janeiro </a>
+        <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> São Paulo </a>
+        <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Minas Gerais </a>
+        <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Rio Grande do Sul </a>
+      </div>
+
+    <div class="box">
+      <h3>Fale Conosco</h3>
+      <p>Insira seu e-mail para entrarmos em contato</p>
+      <input type="text" placeholder="seu e-mail" class="email">
+      <input type="submit" value="Enviar" class="btn">
+      <img src="img/pagamento.png" alt="" class="payment-img">
+    </div>
+  </div>
     </section>
 
 

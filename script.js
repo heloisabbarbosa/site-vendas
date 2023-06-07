@@ -20,6 +20,11 @@ document.querySelector('#close-login-btn2').onclick = () => {
   loginForm2.classList.remove('active');
 }
 
+let shopping = document.querySelector('.shopping-cart');
+document.querySelector('#cart-btn').onclick = () => {
+    shopping.classList.toggle('active');
+}
+
 function anuncios() {
   window.location.href = "anuncios.html";
 }
