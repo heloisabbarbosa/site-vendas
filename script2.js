@@ -12,7 +12,7 @@ function segurança() {
 }
 
 function cadastro() {
-  window.location.href = "profile.html";
+  window.location.href = "profile.php";
 }
 
 function pagamentos() {

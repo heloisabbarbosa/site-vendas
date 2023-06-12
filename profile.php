@@ -91,19 +91,19 @@
     <div class="row">
       <div class="content">
         <ul>
-          <li id="meucad">
+          <li id="meucad" onclick="cadastro()">
             <i class="fas fa-file-lines"></i>
             <p>Meu cadastro</p>
           </li>
-          <li>
+          <li onclick="segurança()">
             <i class="fas fa-lock"></i>
-            <p onclick="redirecionar()">Segurança e privacidade</p>
+            <p>Segurança e privacidade</p>
           </li>
-          <li>
+          <li onclick="pagamentos()">
             <i class="fas fa-money-check-dollar"></i>
             <p>Pagamentos</p>
           </li>
-          <li>
+          <li onclick="comunicacoes()">
             <i class="fas fa-comments"></i>
             <p>Comunicações</p>
           </li>
