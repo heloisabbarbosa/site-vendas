@@ -12,7 +12,7 @@ $(document).ready(function () {
 
         if (response === "success") {
           // Redireciona para a página profile.html
-          window.location.href = "./profile.html";
+          window.location.href = "./profile.php";
         } else {
           // Exibe a mensagem de erro na div conteudoLogin
           $("#conteudoLogin").text(response);
