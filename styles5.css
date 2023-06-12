@@ -212,77 +212,82 @@ body {
   padding: 1.2rem;
 }
 
-.segpriv {
+.pagamentos {
     background: url(../img/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 580px;
   }
+
+  .payment {
+    display: flex;
+  }
+
+  .payment i {
+    color: #05668D;
+    font-size: 1.8rem;
+    gap: 1.5rem;
+  }
+
+  .form-cadastro form .payment h3 {
+    font-size: 1.9rem;
+    padding: 0 0.6rem;
+  }
+
+  .form-cadastro form .cartao h3 {
+    padding-top: 2.5rem;
+  }
   
-  .segpriv .row {
+  .pagamentos .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
   }
   
-  .segpriv .row .content {
+  .pagamentos .row .content {
     flex: 1 1 42rem;
   }
   
-  .segpriv .row .form-cadastro {
+  .pagamentos .row .form-cadastro {
     flex: 1 1 42rem;
   }
   
-  .segpriv .row .content ul li {
+  .pagamentos .row .content ul li {
     display: flex;
     padding: 2rem;
     cursor: pointer;
     width: 70%;
   }
   
-  .segpriv .row .content ul li:hover {
+  .pagamentos .row .content ul li:hover {
     background-color: #c7dcff;
     border-radius: 0.7rem;
     width: 70%;
   }
   
-  .segpriv .row .content ul li i {
+  .pagamentos .row .content ul li i {
     color: var(--yellow);
     font-size: 2.2rem;
   }
   
-  .segpriv .row .content ul li p {
+  .pagamentos .row .content ul li p {
     font-size: 1.7rem;
     margin-left: 2rem;
   }
   
-  .segpriv .row .content ul #segurança {
+  .pagamentos .row .content ul #payment {
     background-color: #c7dcff;
     border-radius: 0.7rem;
     width: 70%;
   }
 
-  .security {
-    display: flex;
-  }
-
-  .security i {
-    color: green;
-    font-size: 1.8rem;
-    gap: 1.5rem;
-  }
-
-  .security h3 {
-    padding: 0 0.6rem;
-  }
-  
-  .segpriv .row .form-cadastro {
+  .pagamentos .row .form-cadastro {
     display: flex;
     align-items: center;
   }
   
-  .segpriv .row .form-cadastro form {
+  .pagamentos .row .form-cadastro form {
     background: rgb(255, 255, 255, 0.8);
     border: var(--border);
     padding: 5rem;
@@ -291,21 +296,21 @@ body {
     margin: 2rem;
   }
   
-  .segpriv .row .form-cadastro form h1 {
+  .pagamentos .row .form-cadastro form h1 {
     padding-bottom: 3rem;
     font-size: 3rem;
     color: #05668D;
     text-align: left;
   }
   
-  .segpriv .row .form-cadastro form h3 {
+  .pagamentos .row .form-cadastro form h3 {
     padding-bottom: 1rem;
     font-size: 1.5rem;
     color: var(--light-color);
     text-align: left;
   }
   
-  .segpriv .row .form-cadastro form span {
+  .pagamentos .row .form-cadastro form span {
     font-size: 1.5rem;
     padding-top: 1rem;
     color: var(--light-color);
@@ -378,4 +383,43 @@ body {
   .swiper-button-next:hover, .swiper-button-prev:hover {
     background: #05668D;
     color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* responsividade */
+
+@media (max-width: 991px) {
+    .headerprofile .account.active {
+      top: 11%;
+      right: 4rem;
+      transition: 0.2s linear;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .headerprofile .account {
+      top: -100%;
+      right: 0;
+    }
+  
+    .headerprofile .account.active {
+      top: 11%;
+      right: 3.8rem;
+      transition: 0.2s linear;
+    }
   }

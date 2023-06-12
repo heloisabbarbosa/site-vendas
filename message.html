@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles6.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -57,11 +57,11 @@
           </ul>
     </header>
 
-    <section class="cadastro" id="minhaconta">
+    <section class="comunic" id="message">
       <div class="row">
         <div class="content">
           <ul>
-            <li id="meucad" onclick="cadastro()">
+            <li onclick="cadastro()">
               <i class="fas fa-file-lines"></i>
               <p>Meu cadastro</p>
             </li>
@@ -73,7 +73,7 @@
               <i class="fas fa-money-check-dollar"></i>
               <p>Pagamentos</p>
             </li>
-            <li onclick="comunicacoes()">
+            <li id="comunicacoes" onclick="comunicacoes()">
               <i class="fas fa-comments"></i>
               <p>Comunicações</p>
             </li>
@@ -86,15 +86,31 @@
 
       <div class="form-cadastro">
         <form action="">
-          <h1>Meu cadastro</h1>
-          <h3>Dados da conta</h3>
-          <span>Apelido</span>
-          <input type="text" class="box" name="" placeholder="User teste" id="" required>
-          <span>CPF</span>
-          <input type="text" maxlength="20" class="box" name="" placeholder="123.456.789-10" required>
-          <span>E-mail</span>
-          <input type="email" class="box" placeholder="userteste@gmail.com" name=""  id="" required>
-          <input type="submit" value="Alterar" class="btn">
+          <h1>Comunicações</h1>
+          <div class="notice">
+            <i class="fas fa-bell"></i>
+            <h3>Escolha como você quer receber nossas comunicações</h3>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="">
+            <label for="status">Saiba se alguém já comprou algum anúncio.</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="">
+            <label for="status">Ver quantas pessoas viram seu anúncio.</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="">
+            <label for="status">Informações sobre o estado da denúncia que você reportou.</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="">
+            <label for="status">Saiba quando tem novidades e funcionalidades novas.</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="">
+            <label for="status">Informações sobre a segurança da sua conta.</label>
+          </div>
         </form>
       </div>
     </div>

@@ -212,77 +212,78 @@ body {
   padding: 1.2rem;
 }
 
-.segpriv {
+.comunic {
     background: url(../img/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 580px;
   }
   
-  .segpriv .row {
+  .comunic .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
   }
   
-  .segpriv .row .content {
+  .comunic .row .content {
     flex: 1 1 42rem;
   }
   
-  .segpriv .row .form-cadastro {
+  .comunic .row .form-cadastro {
     flex: 1 1 42rem;
   }
   
-  .segpriv .row .content ul li {
+  .comunic .row .content ul li {
     display: flex;
     padding: 2rem;
     cursor: pointer;
     width: 70%;
   }
   
-  .segpriv .row .content ul li:hover {
+  .comunic .row .content ul li:hover {
     background-color: #c7dcff;
     border-radius: 0.7rem;
     width: 70%;
   }
   
-  .segpriv .row .content ul li i {
+  .comunic .row .content ul li i {
     color: var(--yellow);
     font-size: 2.2rem;
   }
   
-  .segpriv .row .content ul li p {
+  .comunic .row .content ul li p {
     font-size: 1.7rem;
     margin-left: 2rem;
   }
   
-  .segpriv .row .content ul #segurança {
+  .comunic .row .content ul #comunicacoes {
     background-color: #c7dcff;
     border-radius: 0.7rem;
     width: 70%;
   }
 
-  .security {
+  .notice {
     display: flex;
+    padding-bottom: 1.3rem;
   }
 
-  .security i {
+  .notice i {
     color: green;
     font-size: 1.8rem;
     gap: 1.5rem;
   }
 
-  .security h3 {
+  .form-cadastro form .notice h3 {
     padding: 0 0.6rem;
   }
   
-  .segpriv .row .form-cadastro {
+  .comunic .row .form-cadastro {
     display: flex;
     align-items: center;
   }
   
-  .segpriv .row .form-cadastro form {
+  .comunic .row .form-cadastro form {
     background: rgb(255, 255, 255, 0.8);
     border: var(--border);
     padding: 5rem;
@@ -291,21 +292,21 @@ body {
     margin: 2rem;
   }
   
-  .segpriv .row .form-cadastro form h1 {
+  .comunic .row .form-cadastro form h1 {
     padding-bottom: 3rem;
     font-size: 3rem;
     color: #05668D;
     text-align: left;
   }
   
-  .segpriv .row .form-cadastro form h3 {
+  .comunic .row .form-cadastro form h3 {
     padding-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--light-color);
     text-align: left;
   }
   
-  .segpriv .row .form-cadastro form span {
+  .comunic .row .form-cadastro form span {
     font-size: 1.5rem;
     padding-top: 1rem;
     color: var(--light-color);
@@ -379,3 +380,59 @@ body {
     background: #05668D;
     color: #fff;
   }
+
+  .form-cadastro form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 1rem 0;
+  }
+  
+  .form-cadastro form .checkbox label {
+    font-size: 1.3em;
+    color: var(--light-color);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* responsividade */
+
+@media (max-width: 991px) {
+  .headerprofile .account.active {
+    top: 11%;
+    right: 4rem;
+    transition: 0.2s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerprofile .account {
+    top: -100%;
+    right: 0;
+  }
+
+  .headerprofile .account.active {
+    top: 11%;
+    right: 3.8rem;
+    transition: 0.2s linear;
+  }
+}

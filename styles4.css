@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --yellow: #cc902a;
+    --darkcolor: #815406;
+    --black: #444;
+    --light-color: #666;
+    --border: .1rem solid rgba(0,0,0, 0.1);
+    --border-hover: .1rem solid #05668D;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+  }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    transition: width none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+  }
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: var(--black);
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4rem;
+    gap: 1.5rem;
+  }
+  
+  .container {
+    width: 600px;
+    padding: 2.4rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: justify;
+  }
+
+ .container .logo {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    text-transform: none;
+ }
+
+ .logo:hover {
+    color: var(--yellow);
+}
+
+.logo i {
+    color: var(--yellow);
+}
+
+.container p {
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.container span {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    color: #484d50;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsividade */
+
+@media (max-width: 991px) {
+  .headerprofile .account.active {
+    top: 11%;
+    right: 4rem;
+    transition: 0.2s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerprofile .account {
+    top: -100%;
+    right: 0;
+  }
+
+  .headerprofile .account.active {
+    top: 11%;
+    right: 3.8rem;
+    transition: 0.2s linear;
+  }
+}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="styles5.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -57,21 +57,21 @@
           </ul>
     </header>
 
-    <section class="segpriv" id="security">
+    <section class="pagamentos" id="payment">
       <div class="row">
         <div class="content">
           <ul>
-            <li>
+            <li onclick="cadastro()">
               <i class="fas fa-file-lines"></i>
               <p>Meu cadastro</p>
             </li>
-            <li id="segurança">
+            <li onclick="segurança()">
               <i class="fas fa-lock"></i>
               <p>Segurança e privacidade</p>
             </li>
-            <li>
+            <li id="payment" onclick="pagamentos()">
               <i class="fas fa-money-check-dollar"></i>
-              <p>Pagamentos</p>
+              <p >Pagamentos</p>
             </li>
             <li>
               <i class="fas fa-comments"></i>
@@ -86,15 +86,15 @@
 
       <div class="form-cadastro">
         <form action="">
-          <h1>Segurança e Privacidade</h1>
-          <div class="security">
-            <i class="fas fa-shield-halved"></i>
-            <h3>Seguro</h3>
+          <h1>Pagamentos</h1>
+          <div class="payment">
+            <i class="fas fa-credit-card"></i>
+            <h3>Meus cartões</h3>
           </div>
-          <span>Entenda como cuidamos da sua segurança e veja dicas de como fazer uma negociação segura.</span>
-          <span></span>
-          <span></span>
-          <input type="submit" value="Verificar termos" class="btn">
+          <span>Ops! Você não tem nenhum cartão cadastrado.<br>
+            Compre destaques e anúncios com mais facilidade e rapidez ao cadastrar.</span>
+          <div class="cartao"><h3>Adicione um cartão de crédito</h3></div>
+          <a href="termos.html" class="btn">Adicionar cartão</a>
         </form>
       </div>
     </div>

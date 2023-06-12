@@ -3,8 +3,24 @@ document.querySelector('#user-btn').onclick = () => {
     user.classList.toggle('active');
 }
 
-function redirecionar() {
+function termos() {
+  window.location.href = "termos.html";
+}
+
+function segurança() {
   window.location.href = "security.html";
+}
+
+function cadastro() {
+  window.location.href = "profile.html";
+}
+
+function pagamentos() {
+  window.location.href = "payment.html";
+}
+
+function comunicacoes() {
+  window.location.href = "message.html";
 }
 
 var swiper = new Swiper(".produtos-slider", {
