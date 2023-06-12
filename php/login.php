@@ -1,5 +1,4 @@
 <?php
-
 include "conexao.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,33 +10,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Consulta SQL para verificar se o usuário existe no banco de dados
         $sql = "SELECT * FROM cadastros_parceiro WHERE email = '$email' AND senha = '$senha'";
-        $result = $conn->query($sql);
+        $result = mysqli_query($conn, $sql);
 
         // Verifica se a consulta retornou algum resultado
-        if ($result->num_rows > 0) {
+        if (mysqli_num_rows($result) > 0) {
             // Usuário autenticado com sucesso
-            echo "login realizado com sucesso";
-            header("Location: ../profile.html");
-            exit();
+            session_start();
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $senha;
+
+            echo "success";
         } else {
             // Usuário não encontrado ou senha incorreta
            echo "Email ou senha inválidos.";
         }
-       
-    
-
     } else if ($formulario == "cadastro") {
-
         $email = $_POST["email"];
         $senha = $_POST["senha"];
         $nome = $_POST["nome"];
         $cpf = $_POST["cpf"];
 
-        $sql_read = "INSERT INTO cadastros_parceiro(nome, cpf, email, senha) VALUES ('$nome','$cpf','$email','$senha')";
-        $stmt = mysqli_prepare($conn, $sql_read);
-        mysqli_stmt_execute($stmt);
-        
-        echo "CADASTRO REALIZADO COM SUCESSO";
+        $sql = "SELECT * FROM cadastros_parceiro WHERE cpf = '$cpf'";
+        $result = mysqli_query($conn, $sql);
 
+        // Verifica se a consulta retornou algum resultado
+        if (mysqli_num_rows($result) > 0) {
+            // Usuário já cadastrado
+            echo "CPF JÁ CADASTRADO";
+        } else {
+            $sql_insert = "INSERT INTO cadastros_parceiro(nome, cpf, email, senha) VALUES ('$nome','$cpf','$email','$senha')";
+            $result_insert = mysqli_query($conn, $sql_insert);
+            
+            if ($result_insert) {
+                echo "CADASTRO REALIZADO COM SUCESSO";
+            } else {
+                echo "Erro ao cadastrar.";
+            }
+        }
     }
 }
+?>

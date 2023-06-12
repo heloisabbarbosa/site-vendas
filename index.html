@@ -87,11 +87,16 @@
 
     <div class="login-form">
       <div id="close-login-btn" class="fas fa-times"></div>
-      <form method="POST" action="php/login.php">
+      
+      <form id="loginForm">
+        
         <input type="hidden" name="formulario" value="login">
         <h3>Faça Login</h3>
+        <div id="conteudoLogin">
+        </div>
+
         <span>E-mail</span>
-        <input type="email" class="box" name="email" placeholder="insira seu e-mail" id="" required>
+        <input type="email" class="box" name="email" placeholder="insira seu e-mail"  required>
         <span>Senha</span>
         <div class="inputSenha">
         <input type="password" maxlength="20" class="box" name="senha" placeholder="insira sua senha" id="senha" required>
@@ -299,7 +304,7 @@
     <section class="newsletter">
       <form action="">
         <h3>Se inscreva para receber atualizações</h3>
-        <input type="email" name="" placeholder="Insira seu e-mail" id="" class="box">
+        <input type="email" name="" placeholder="Insira seu e-mail"  class="box">
         <input type="submit" value="Inscreva-se" class="btn">
       </form>
     </section>
@@ -500,16 +505,20 @@
 
       <div class="login-form2">
         <div id="close-login-btn2" class="fas fa-times"></div>
-        <form id="loginForm">
+        <form id="cadastroForm">
           <input type="hidden" name="formulario" value="cadastro">
           <h3>Registre-se</h3>
-          <div id="conteudo"></div>
+          
+          <div id="conteudoCadastro">
+            
+          </div>
+
           <span>Apelido</span>
-          <input type="text" maxlength="20" class="box" name="nome" placeholder="ex: Heloisa B" id="" required>
+          <input type="text" maxlength="20" class="box" name="nome" placeholder="ex: Heloisa B"  required>
           <span>Insira seu CPF</span>
-          <input type="text" class="cpf" name="cpf" placeholder="somente números, ex: 12345678985" id="" required>
+          <input type="text" class="cpf" name="cpf" placeholder="somente números, ex: 12345678985"  required>
           <span>E-mail</span>
-          <input type="email" class="box" name="email"  id="" required>
+          <input type="email" class="box" name="email"   required>
           <span>Senha</span>
           <div class="inputSenha2">
           <input type="password" maxlength="20" class="box" name="senha" id="password2" required>
@@ -519,7 +528,7 @@
             <input type="checkbox" name="" id="remember-me2">
             <label for="remember-me">Relembrar</label>
           </div>
-          <input type="submit" value="Cadastra-se" class="btn" onclick="anuncios()">
+          <input type="submit" value="Cadastra-se" class="btn">
           <p>Já tem uma conta? <a href="#">Entrar</a></p>
         </form>
     </div>
