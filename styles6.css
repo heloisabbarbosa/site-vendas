@@ -263,6 +263,12 @@ body {
     width: 70%;
   }
 
+  .comunic .row .content ul #level {
+    background-color: #c7dcff;
+    border-radius: 0.7rem;
+    width: 70%;
+  }
+
   .notice {
     display: flex;
     padding-bottom: 1.3rem;
@@ -389,6 +395,28 @@ body {
   }
   
   .form-cadastro form .checkbox label {
+    font-size: 1.3em;
+    color: var(--light-color);
+  }
+
+  .form-cadastro form .checkbox1 {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 1rem 0;
+  }
+
+  .form-cadastro form .checkbox1 i {
+    font-size: 1.2rem;
+    color: #05668D;
+  }
+
+  .form-cadastro form .checkbox1 i:hover {
+    color: var(--yellow);
+    cursor: pointer;
+  }
+  
+  .form-cadastro form .checkbox1 label {
     font-size: 1.3em;
     color: var(--light-color);
   }

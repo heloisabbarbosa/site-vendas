@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles6.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -57,11 +57,11 @@
           </ul>
     </header>
 
-    <section class="cadastro" id="minhaconta">
+    <section class="comunic" id="message">
       <div class="row">
         <div class="content">
           <ul>
-            <li id="meucad" onclick="cadastro()">
+            <li onclick="cadastro()">
               <i class="fas fa-file-lines"></i>
               <p>Meu cadastro</p>
             </li>
@@ -77,7 +77,7 @@
               <i class="fas fa-comments"></i>
               <p>Comunicações</p>
             </li>
-            <li>
+            <li id="level">
               <i class="fas fa-database"></i>
               <p>Meu nível</p>
             </li>
@@ -86,15 +86,27 @@
 
       <div class="form-cadastro">
         <form action="">
-          <h1>Meu cadastro</h1>
-          <h3>Dados da conta</h3>
-          <span>Apelido</span>
-          <input type="text" class="box" name="" placeholder="User teste" id="" required>
-          <span>CPF</span>
-          <input type="text" maxlength="20" class="box" name="" placeholder="123.456.789-10" required>
-          <span>E-mail</span>
-          <input type="email" class="box" placeholder="userteste@gmail.com" name=""  id="" required>
-          <input type="submit" value="Alterar" class="btn">
+          <h1>Nível da conta</h1>
+          <div class="notice">
+            <i class="fas fa-lock"></i>
+            <h3>Torne sua conta mais segura e seu perfil mais confiável</h3>
+          </div>
+          <div class="checkbox1">
+            <i class="fas fa-envelope"></i>
+            <label for="status">Contatos sempre disponíveis.</label>
+          </div>
+          <div class="checkbox1">
+            <i class="fas fa-phone"></i> 
+            <label for="status">Telefone atualizado e verificado.</label>
+          </div>
+          <div class="checkbox1">
+            <i class="fas fa-user"></i> 
+            <label for="status">Cadastro sempre atualizado.</label>
+          </div>
+          <div class="checkbox1">
+            <i class="fas fa-file-lines"></i> 
+            <label for="status">Informações atualizadas de suas compras.</label>
+          </div>
         </form>
       </div>
     </div>

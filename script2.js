@@ -23,6 +23,10 @@ function comunicacoes() {
   window.location.href = "message.html";
 }
 
+function nivel() {
+  window.location.href = "level.html";
+}
+
 var swiper = new Swiper(".produtos-slider", {
     spaceBetween: 10,
     loop:true,
