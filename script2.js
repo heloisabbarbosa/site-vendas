@@ -3,6 +3,10 @@ document.querySelector('#user-btn').onclick = () => {
     user.classList.toggle('active');
 }
 
+function redirecionar() {
+  window.location.href = "security.html";
+}
+
 var swiper = new Swiper(".produtos-slider", {
     spaceBetween: 10,
     loop:true,
