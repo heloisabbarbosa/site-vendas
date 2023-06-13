@@ -403,8 +403,8 @@ body {
 
   /* responsividade */
   @media (max-width: 1040px) {
-    .pagamentos {
-      height: 980px;
+    .segpriv {
+      height: 800px;
     }
   }
 

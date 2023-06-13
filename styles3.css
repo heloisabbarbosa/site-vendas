@@ -391,10 +391,9 @@ body {
 
 
   /* responsividade */
-
 @media (max-width: 1040px) {
   .segpriv {
-    height: 980px;
+    height: 800px;
   }
 }
 

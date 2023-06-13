@@ -447,8 +447,8 @@ body {
 /* responsividade */
 
 @media (max-width: 1040px) {
-  .comunic {
-    height: 980px;
+  .segpriv {
+    height: 800px;
   }
 }
 

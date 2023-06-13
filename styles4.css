@@ -108,8 +108,8 @@ body {
 /* responsividade */
 
 @media (max-width: 1040px) {
-  .cadastro {
-    height: 980px;
+  .segpriv {
+    height: 800px;
   }
 }
 
