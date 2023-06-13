@@ -377,6 +377,19 @@ body {
   color: #fff;
 }
 
+.form-cadastro form .inputSenha2 {
+  position: relative;
+}
+
+.form-cadastro form .inputSenha2 #iconsenha2 {
+  position: absolute;
+  right: 5%;
+  padding-top: 20px;
+  color: var(--light-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 
 
