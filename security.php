@@ -78,7 +78,7 @@
               <a href="">Ajuda</a>
             </li>
             <hr color="#d3d3d3 " size="3">
-            <li>
+            <li onclick="sair()"> 
               <i class="fas fa-right-from-bracket"></i>
               <a href="">Sair</a>
             </li>

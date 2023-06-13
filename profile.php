@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   session_start();
   
 
@@ -24,7 +24,7 @@
     $senha = $row["senha"];
     $cpf = $row["cpf"]; 
   }
-?> -->
+?>  
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +39,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="shortcut icon" href="img/icon-pag.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="ajax.js"></script>
+  
   <title>Minha conta</title>
 </head>
 
@@ -80,9 +84,9 @@
           <a href="">Ajuda</a>
         </li>
         <hr color="#d3d3d3 " size="3">
-        <li>
+        <li onclick="sair()">
           <i class="fas fa-right-from-bracket"></i>
-          <a href="">Sair</a>
+          <a href="sair.php">Sair</a>
         </li>
       </ul>
   </header>
@@ -115,17 +119,18 @@
       </div>
 
       <div class="form-cadastro">
-        <form action="">
+        <form id="update">
+          <div class="erro"></div>
           <h1>Meu cadastro</h1>
           <h3>Dados da conta</h3>
           <span>Apelido</span>
-          <input type="text" class="box" name="" placeholder="<?php echo $nome; ?>">
+          <input type="text" class="box" name="" value="<?php echo $nome; ?>" required>
           <span>CPF</span>
-          <input type="text" maxlength="20" class="box" name="" placeholder="<?php echo $cpf; ?>" readonly>
+          <input type="text" maxlength="20" class="box" name="" value="<?php echo $cpf; ?>" readonly>
           <span>E-mail</span>
-          <input type="email" class="box" placeholder="<?php echo $email; ?>">
+          <input type="email" class="box" value="<?php echo $email; ?> required">
           <div class="inputSenha2">
-            <input type="password" maxlength="20" class="box" name="senha" id="password2" value="<?php echo $senha; ?>">
+            <input type="password" maxlength="20" class="box" name="senha" id="password2" value="<?php echo $senha; ?>" required>
             <div id="iconsenha2" class="fas fa-eye" onclick="show()"></div>
             </div>
           <input type="submit" value="Alterar" class="btn">

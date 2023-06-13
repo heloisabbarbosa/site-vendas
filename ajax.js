@@ -55,4 +55,25 @@ $(document).ready(function () {
   });
 
 
+  $("#update").submit(function (event) {
+    event.preventDefault();
+
+    var formData = $(this).serialize(); // Serializa os dados do formulário
+
+    $.ajax({
+      url: "update.php", // Substitua pelo caminho correto para o arquivo PHP
+      type: "POST",
+      data: formData,
+      success: function (response) {
+        if (response === 'sucesso') {
+          window.location.href = "sair.php";
+        }else{
+          $("#erro").empty(); // Limpa o conteúdo existente na div com o ID "conteudo"
+          var h3Element = $("<h2>").text("ATUALIZAÇÃO NÃO REALIZADA"); // Cria um elemento <h3> e define o texto como a resposta do arquivo PHP
+          $("#erro").append(h3Element);
+        }
+      }
+    });
+  });
+
 });

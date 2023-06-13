@@ -26,6 +26,10 @@ function comunicacoes() {
 function nivel() {
   window.location.href = "level.php";
 }
+function sair() {
+  window.location.href = "sair.php";
+}
+
 
 function show() {
   var inputPass = document.getElementById('password2')
