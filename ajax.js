@@ -3,7 +3,7 @@ $(document).ready(function () {
     event.preventDefault();
 
     var formData = $(this).serialize(); // Serializa os dados do formulário
-
+    var minhaDiv = document.getElementById("conteudoLogin")
     $.ajax({
       url: "php/login.php", // Substitua pelo caminho correto para o arquivo PHP
       type: "POST",
@@ -15,7 +15,10 @@ $(document).ready(function () {
           window.location.href = "./profile.php";
         } else {
           // Exibe a mensagem de erro na div conteudoLogin
-          $("#conteudoLogin").text(response);
+          $("#conteudoLogin").empty(); // Limpa o conteúdo existente na div com o ID "conteudo"
+          var h3Element = $("<h2>").text(response); // Cria um elemento <h3> e define o texto como a resposta do arquivo PHP
+          $("#conteudoLogin").append(h3Element);
+          minhaDiv.style.color = "red";
         }
       },
       error: function () {
@@ -40,16 +43,19 @@ $(document).ready(function () {
           var h3Element = $("<h2>").text(response); // Cria um elemento <h3> e define o texto como a resposta do arquivo PHP
           $("#conteudoCadastro").append(h3Element);
           minhaDiv.style.color = "green";
+          console.log(response)
         }else{
           
           $("#conteudoCadastro").empty(); // Limpa o conteúdo existente na div com o ID "conteudo"
           var h3Element = $("<h2>").text(response); // Cria um elemento <h3> e define o texto como a resposta do arquivo PHP
           $("#conteudoCadastro").append(h3Element); // Exibe a resposta do arquivo PHP na div com o ID "conteudo"
           minhaDiv.style.color = "red";
+          console.log(response)
         }
         },
       error: function () {
         $("#conteudoCadastro").text("Erro ao enviar os dados."); // Mensagem de erro em caso de falha na requisição AJAX
+        console.log(response)
       }
     });
   });
