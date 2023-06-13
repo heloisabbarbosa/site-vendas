@@ -24,7 +24,7 @@
     $senha = $row["senha"];
     $cpf = $row["cpf"]; 
   }
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -124,11 +124,11 @@
           <h1>Meu cadastro</h1>
           <h3>Dados da conta</h3>
           <span>Apelido</span>
-          <input type="text" class="box" name="" value="<?php echo $nome; ?>" required>
+          <input type="text" class="box" name="nome" value="<?php echo $nome; ?>" required>
           <span>CPF</span>
-          <input type="text" maxlength="20" class="box" name="" value="<?php echo $cpf; ?>" readonly>
+          <input type="text" maxlength="20" class="box" name="cpf" value="<?php echo $cpf; ?>" readonly>
           <span>E-mail</span>
-          <input type="email" class="box" value="<?php echo $email; ?>" required>
+          <input type="email" class="box" name="email" value="<?php echo $email; ?>" required>
           <div class="inputSenha2">
             <input type="password" maxlength="20" class="box" name="senha" id="password2" value="<?php echo $senha; ?>" required>
             <div id="iconsenha2" class="fas fa-eye" onclick="show()"></div>

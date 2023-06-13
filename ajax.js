@@ -67,10 +67,12 @@ $(document).ready(function () {
       success: function (response) {
         if (response === 'sucesso') {
           window.location.href = "sair.php";
+          console.log(response);
         }else{
           $("#erro").empty(); // Limpa o conteúdo existente na div com o ID "conteudo"
           var h3Element = $("<h2>").text("ATUALIZAÇÃO NÃO REALIZADA"); // Cria um elemento <h3> e define o texto como a resposta do arquivo PHP
           $("#erro").append(h3Element);
+          console.log(response);
         }
       }
     });

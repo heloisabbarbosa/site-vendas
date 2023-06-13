@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
-    $sql = "UPDATE `cadastros_parceiro` SET `nome`='$nome',`cpf`='$cpf',`email`='$email',`senha`='$senha' where 'cpf' = '$cpf'";
+    $sql = "UPDATE `cadastros_parceiro` SET `nome`='$nome',`cpf`='$cpf',`email`='$email',`senha`='$senha' WHERE cpf = '$cpf'";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         if (mysqli_affected_rows($conn) > 0) {
