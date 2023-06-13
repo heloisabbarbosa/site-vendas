@@ -4,11 +4,11 @@ document.querySelector('#user-btn').onclick = () => {
 }
 
 function termos() {
-  window.location.href = "termos.html";
+  window.location.href = "termos.php";
 }
 
 function segurança() {
-  window.location.href = "security.html";
+  window.location.href = "security.php";
 }
 
 function cadastro() {
@@ -16,15 +16,15 @@ function cadastro() {
 }
 
 function pagamentos() {
-  window.location.href = "payment.html";
+  window.location.href = "payment.php";
 }
 
 function comunicacoes() {
-  window.location.href = "message.html";
+  window.location.href = "message.php";
 }
 
 function nivel() {
-  window.location.href = "level.html";
+  window.location.href = "level.php";
 }
 
 var swiper = new Swiper(".produtos-slider", {

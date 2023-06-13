@@ -1,10 +1,38 @@
+<?php
+  session_start();
+  
+
+  if(!isset($_SESSION['email']) && !isset($_SESSION['senha']) ){
+    // O usuário não está logado, redirecionar para a página de login (login.html)
+    unset ($_SESSION['email']);
+    unset ($_SESSION['senha']);
+    header("Location: index.html");
+    exit();
+  }
+  include "./php/conexao.php";
+  $logado = $_SESSION['email'];
+  $sql = "SELECT * FROM cadastros_parceiro WHERE email = '$logado'";
+  $result = $conn->query($sql);
+
+  // Verificar se o email foi encontrado
+  if ($result->num_rows > 0) {
+    // O email foi encontrado, recuperar as informações
+    $row = $result->fetch_assoc();
+      
+    $nome = $row["nome"];
+    $email = $row["email"];
+    $senha = $row["senha"];
+    $cpf = $row["cpf"]; 
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="styles6.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -57,7 +85,7 @@
           </ul>
     </header>
 
-    <section class="segpriv" id="security">
+    <section class="comunic" id="message">
       <div class="row">
         <div class="content">
           <ul>
@@ -65,7 +93,7 @@
               <i class="fas fa-file-lines"></i>
               <p>Meu cadastro</p>
             </li>
-            <li id="segurança" onclick="segurança()">
+            <li onclick="segurança()">
               <i class="fas fa-lock"></i>
               <p>Segurança e privacidade</p>
             </li>
@@ -77,7 +105,7 @@
               <i class="fas fa-comments"></i>
               <p>Comunicações</p>
             </li>
-            <li onclick="nivel()">
+            <li id="level">
               <i class="fas fa-database"></i>
               <p>Meu nível</p>
             </li>
@@ -86,15 +114,27 @@
 
       <div class="form-cadastro">
         <form action="">
-          <h1>Segurança e Privacidade</h1>
-          <div class="security">
-            <i class="fas fa-shield-halved"></i>
-            <h3>Seguro</h3>
+          <h1>Nível da conta</h1>
+          <div class="notice">
+            <i class="fas fa-lock"></i>
+            <h3>Torne sua conta mais segura e seu perfil mais confiável</h3>
           </div>
-          <span>Entenda como cuidamos da sua segurança e veja dicas de como fazer uma negociação segura.</span>
-          <span></span>
-          <span></span>
-          <a href="termos.html" class="btn">Verificar termos</a>
+          <div class="checkbox1">
+            <i class="fas fa-envelope"></i>
+            <label for="status">Contatos sempre disponíveis.</label>
+          </div>
+          <div class="checkbox1">
+            <i class="fas fa-phone"></i> 
+            <label for="status">Telefone atualizado e verificado.</label>
+          </div>
+          <div class="checkbox1">
+            <i class="fas fa-user"></i> 
+            <label for="status">Cadastro sempre atualizado.</label>
+          </div>
+          <div class="checkbox1">
+            <i class="fas fa-file-lines"></i> 
+            <label for="status">Informações atualizadas de suas compras.</label>
+          </div>
         </form>
       </div>
     </div>

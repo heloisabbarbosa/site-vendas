@@ -1,3 +1,31 @@
+<?php
+  session_start();
+  
+
+  if(!isset($_SESSION['email']) && !isset($_SESSION['senha']) ){
+    // O usuário não está logado, redirecionar para a página de login (login.html)
+    unset ($_SESSION['email']);
+    unset ($_SESSION['senha']);
+    header("Location: index.html");
+    exit();
+  }
+  include "./php/conexao.php";
+  $logado = $_SESSION['email'];
+  $sql = "SELECT * FROM cadastros_parceiro WHERE email = '$logado'";
+  $result = $conn->query($sql);
+
+  // Verificar se o email foi encontrado
+  if ($result->num_rows > 0) {
+    // O email foi encontrado, recuperar as informações
+    $row = $result->fetch_assoc();
+      
+    $nome = $row["nome"];
+    $email = $row["email"];
+    $senha = $row["senha"];
+    $cpf = $row["cpf"]; 
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
