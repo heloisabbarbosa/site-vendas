@@ -402,8 +402,15 @@ body {
 
 
   /* responsividade */
+
+  @media (max-width: 400px) {
+    .pagamentos {
+      height: 1020px;
+    }
+  }
+
   @media (max-width: 1040px) {
-    .segpriv {
+    .pagamentos {
       height: 800px;
     }
   }

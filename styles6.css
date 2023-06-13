@@ -445,10 +445,15 @@ body {
   /* responsividade */
 
 /* responsividade */
+@media (max-width: 400px) {
+  .comunic {
+    height: 1200px;
+  }
+}
 
 @media (max-width: 1040px) {
-  .segpriv {
-    height: 800px;
+  .comunic {
+    height: 840px;
   }
 }
 
