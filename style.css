@@ -275,7 +275,7 @@ body {
   cursor: pointer;
   color: var(--light-color);
   font-size: 1.5rem;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .login-form2 form .inputSenha2 {

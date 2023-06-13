@@ -27,6 +27,20 @@ function nivel() {
   window.location.href = "level.php";
 }
 
+function show() {
+  var inputPass = document.getElementById('password2')
+  var btnShowPass = document.getElementById('iconsenha2')
+
+  if (inputPass.type === 'password') {
+    inputPass.setAttribute('type','text')
+    btnShowPass.classList.replace('fa-eye','fa-eye-slash')
+  }
+  else {
+    inputPass.setAttribute('type','password')
+    btnShowPass.classList.replace('fa-eye-slash','fa-eye')
+  }
+}
+
 var swiper = new Swiper(".produtos-slider", {
     spaceBetween: 10,
     loop:true,
