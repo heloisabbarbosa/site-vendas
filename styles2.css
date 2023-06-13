@@ -216,7 +216,7 @@ body {
   background: url(../img/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 580px;
+  height: 610px;
 }
 
 .cadastro .row {
@@ -413,6 +413,12 @@ body {
 
 
 /* responsividade */
+
+@media (max-width: 1040px) {
+  .cadastro {
+    height: 980px;
+  }
+}
 
 @media (max-width: 991px) {
   .headerprofile .account.active {

@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   session_start();
   
 
@@ -24,7 +24,7 @@
     $senha = $row["senha"];
     $cpf = $row["cpf"]; 
   }
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">

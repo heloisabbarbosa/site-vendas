@@ -105,6 +105,14 @@ body {
 
 /* responsividade */
 
+/* responsividade */
+
+@media (max-width: 1040px) {
+  .cadastro {
+    height: 980px;
+  }
+}
+
 @media (max-width: 991px) {
   .headerprofile .account.active {
     top: 11%;

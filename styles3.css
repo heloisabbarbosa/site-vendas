@@ -379,3 +379,42 @@ body {
     background: #05668D;
     color: #fff;
   }
+
+
+
+
+
+
+
+
+
+
+
+  /* responsividade */
+
+@media (max-width: 1040px) {
+  .segpriv {
+    height: 980px;
+  }
+}
+
+@media (max-width: 991px) {
+  .headerprofile .account.active {
+    top: 11%;
+    right: 4rem;
+    transition: 0.2s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerprofile .account {
+    top: -100%;
+    right: 0;
+  }
+
+  .headerprofile .account.active {
+    top: 11%;
+    right: 3.8rem;
+    transition: 0.2s linear;
+  }
+}

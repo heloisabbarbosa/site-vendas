@@ -402,6 +402,11 @@ body {
 
 
   /* responsividade */
+  @media (max-width: 1040px) {
+    .pagamentos {
+      height: 980px;
+    }
+  }
 
 @media (max-width: 991px) {
     .headerprofile .account.active {
