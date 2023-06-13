@@ -128,7 +128,7 @@
           <span>CPF</span>
           <input type="text" maxlength="20" class="box" name="" value="<?php echo $cpf; ?>" readonly>
           <span>E-mail</span>
-          <input type="email" class="box" value="<?php echo $email; ?> required">
+          <input type="email" class="box" value="<?php echo $email; ?>" required>
           <div class="inputSenha2">
             <input type="password" maxlength="20" class="box" name="senha" id="password2" value="<?php echo $senha; ?>" required>
             <div id="iconsenha2" class="fas fa-eye" onclick="show()"></div>
