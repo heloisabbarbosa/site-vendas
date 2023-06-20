@@ -32,7 +32,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="css/styles3.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -122,7 +122,7 @@
           <span>Entenda como cuidamos da sua segurança e veja dicas de como fazer uma negociação segura.</span>
           <span></span>
           <span></span>
-          <a href="termos.html" class="btn">Verificar termos</a>
+          <a href="termos.php" class="btn">Verificar termos</a>
         </form>
       </div>
     </div>
@@ -216,6 +216,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="script2.js"></script>
+    <script src="scripts/script2.js"></script>
 </body>
 </html>

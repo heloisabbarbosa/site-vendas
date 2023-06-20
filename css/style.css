@@ -88,6 +88,22 @@ section {
   background: var(--darkcolor);
 }
 
+#conteudoLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+}
+
+#conteudoCadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+}
+
 .header .header1 {
   background-color: #05668D;
   padding: 1.5rem 9%;

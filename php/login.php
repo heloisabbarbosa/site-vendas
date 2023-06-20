@@ -31,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (mysqli_num_rows($result_check_email) == 0) {
                 // E-mail não cadastrado
-                echo "E-MAIL NÃO CADASTRADO";
+                echo "E-mail não cadastrado.";
             } elseif (mysqli_num_rows($result_check_senha) == 0) {
                 // Senha incorreta
-                echo "SENHA INCORRETA";
+                echo "Senha incorreta.";
             }
         }
 
@@ -52,12 +52,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             while ($row = mysqli_fetch_assoc($result_check)) {
                 if ($row['email'] == $email) {
                     // E-mail já cadastrado
-                    echo "E-MAIL JÁ CADASTRADO";
+                    echo "E-mail já cadastrado.";
                     break;
                 }
                 if ($row['cpf'] == $cpf) {
                     // CPF já cadastrado
-                    echo "CPF JÁ CADASTRADO";
+                    echo "CPF já cadastrado.";
                     break;
                 }
             }
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $result_insert = mysqli_query($conn, $sql_insert);
 
             if ($result_insert) {
-                echo "CADASTRO REALIZADO COM SUCESSO";
+                echo "Cadastro realizado com sucesso!";
             } else {
                 echo "Erro ao cadastrar.";
             }
